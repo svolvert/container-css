@@ -243,7 +243,7 @@ kubectl describe pv <PV_NAME>
 
 - Copy the sample SSL keystore file [cssSelfsignedServerStore](https://github.ibm.com/ecm-container-service/css-docker/blob/master/sample/cssSelfsignedServerStore) or customized keystore file to /cfgstore/css/css_server_data
 
-4. Deploy IBM Content Search Services ([sample YAML file](https://github.ibm.com/ecm-container-service/css-docker/tree/master/sample/css-deploy.yaml)).
+4. Deploy IBM Content Search Services ([sample YAML file](https://github.com/ibm-ecm/container-css/blob/master/sample/css-deploy.yaml)).
 
 ```
 kubectl create -f css-deploy.yaml

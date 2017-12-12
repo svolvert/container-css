@@ -94,8 +94,8 @@ Sample SSL keystores inside the Content Platform Engine container
 Use the following command with your own credentials.
 
 ```
-docker login -u ***** -p ****** ecm-containerization-docker-local.artifactory.swg-devops.com
-docker pull ecm-containerization-docker-local.artifactory.swg-devops.com/css:latest
+docker login -u ***** -p ****** 
+docker pull ecmcontainers/ecm_earlyadopters_css:earlyadopters-gm5.5
 ```
 ## 2. Set the environment variables (optional).
 These optional variables can be set on your Docker container. You can pass these to the container when you run the image by using additional -e FLAG=value arguments.

@@ -243,7 +243,7 @@ kubectl describe pv <PV_NAME>
 
 - Copy the sample SSL keystore file [cssSelfsignedServerStore](https://github.com/ibm-ecm/container-css/blob/master/sample/cssSelfsignedServerStore) or customized keystore file to /cfgstore/css/css_server_data
 
-4. Deploy IBM Content Search Services ([sample YAML file](https://github.com/ibm-ecm/container-css/blob/master/sample/css-deploy.yaml)).
+4. Deploy IBM Content Search Services ([sample YAML file](https://github.com/ibm-ecm/container-css/blob/master/sample/css-deploy.yaml)). Note that there should be only one CSS pod/container per CSS kubernetes application. CSS load balancing should be handled by CPE and not kubernetes load balancing service.
 
 ```
 kubectl create -f css-deploy.yaml
